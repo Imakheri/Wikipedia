@@ -1,0 +1,804 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --primary-color: #3366CC;
+    --secondary-color: #54595d;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 70px;
+    margin-top: 35px;
+}
+header .header-logo {
+    width: 212px;
+    height: 56px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikilogo-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .main-input--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    height: 44px;
+    margin: 0 auto;
+    border-radius: 2px;
+    max-width: 404px;
+    border: 1px solid #a2a9b1;
+}
+main .main-input--container h2{
+    margin: 2.6px 13px;
+    border-bottom: 1px solid #c8ccd1;
+}
+main .main-input--container:focus-visible {
+    border-style: none;
+}
+main .main-input--container:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: inset 0 0 0px .1rem var(--primary-color);
+    outline: 0;
+}
+main .main-input--input {
+    width: 60%;
+    height: 38px;
+    padding: 10px;
+    outline: none;
+    border-style: none;
+}
+main select {
+    border: none;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    line-height: 2.4rem;
+}
+main .main-input--container button {
+    width: 56px;
+    height: 43px;
+    float: right;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+}
+main .main-input--container .button-icon {
+    width: 20px;
+    height: 20px;
+}
+main .main-central--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 50px;
+}
+main .main-central-language--1 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--2 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--3 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--4 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--5 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--6 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--7 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--8 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--9 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--10 {
+    width: 33%;
+    height: 64px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-text--title {
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+main .main-central-text--articles {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    line-height: 1.4;
+    cursor: pointer;
+}
+.first--hr, .second--hr {
+    clear: both;
+    border: 0;
+    height: 0;
+    margin: .26rem 1.3rem;
+    border-bottom: 1px solid #c8ccd1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    padding: 9.6px 6.4px;
+    height: auto;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+footer .footer-sidebar-content--logocontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 12px;
+}
+footer .footer-sidebar-content--logo {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikimedia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-sidebar--text {
+    text-align: center;
+    line-height: 1.95rem;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+footer .footer-sidebar--text a {
+    text-decoration: none;
+}
+footer .footer-sidebar--text a:visited {
+    color: var(--primary-color);
+}
+footer .footer-sidebar-down-desktop--container {
+    display: none;
+}
+footer .footer-otherprojects--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    color: var(--secondary-color);
+}
+footer .footer-otherproject {
+    display: inline-flex;
+    width: 50%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 10px;
+    line-height: 19.5px;
+}
+footer .footer-otherproject--bottom {
+    display: inline-flex;
+    width: 50%;
+    min-height: 50px;
+    padding: 10px 0px 0px 10px;
+    line-height: 19.5px;
+}
+footer .footer-otherproject a {
+    text-decoration: none;
+}
+footer .footer-otherproject--bottom a {
+    text-decoration: none;
+}
+footer .footer-otherproject a:visited {
+    color: var(--primary-color);
+}
+footer .footer-otherproject--bottom a:visited {
+    color: var(--primary-color);
+}
+
+footer .footer-otherproject-1 .icon-commons {
+    position: relative;
+    top: 4px;
+    display: inline-flex;
+    width: 47px;
+    height: 47px;
+    margin-right: 4px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/commons.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer .footer-otherproject-2 .icon-wikivoyage {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikivoyage.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer .footer-otherproject-3 .icon-wiktionary {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wiktionary.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer .footer-otherproject-3 {
+    width: 50px;
+    height: 37px;
+    text-align: center;
+}
+footer .footer-otherproject-4 .icon-wikibooks {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikibooks.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-4 {
+    position: relative;
+    right: 4px;
+    width: 50px;
+    height: 37px;
+    text-align: center;
+}
+footer .footer-otherproject-5 .icon-wikinews {
+    display: inline-block;
+    width: 47px;
+    height: 26px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikinews.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-5 {
+    position: relative;
+    top: 12px;
+    right: 5px;
+    width: 50px;
+    height: 26px;
+    text-align: center;
+}
+footer .footer-otherproject-6 .icon-wikidata {
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+    margin-right: 14px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikidata.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-6 {
+    position: relative;
+    top: 14px;
+    left: 4px;
+    width: 49px;
+    height: 49px;
+    text-align: center;
+}
+footer .footer-otherproject-7 .icon-wikiversity {
+    display: inline-block;
+    width: 43px;
+    height: 37px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikiversity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-7 {
+    position: relative;
+    top: 8px;
+    right: 2px;
+    margin-right: 4px;
+    width: 50px;
+    height: 37px;
+    text-align: center;
+}
+footer .footer-otherproject-8 .icon-wikiquote {
+    display: inline-block;
+    width: 32px;
+    height: 40px;
+    margin-right: 15px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikiquote.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-8 {
+    position: relative;
+    top: 5px;
+    left: 4px;
+    width: 50px;
+    height: 42px;
+    text-align: center;
+}
+footer .footer-otherproject-9 .icon-mediawiki {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/mediawiki.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-9 {
+    position: relative;
+    right: 2px;
+    top: 4px;
+    width: 50px;
+    height: 37px;
+    margin-right: 4px;
+    text-align: center;
+}
+footer .footer-otherproject-10 .icon-wikisource {
+    display: inline-block;
+    width: 37px;
+    height: 38px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikisource.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-10 {
+    width: 50px;
+    height: 39px;
+    text-align: center;
+}
+footer .footer-otherproject-11 .icon-wikispecies {
+    display: inline-block;
+    width: 38px;
+    height: 42px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikispecies.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-11 {
+    position: relative;
+    top: 6px;
+    left: 4px;
+    width: 50px;
+    height: 42px;
+    margin-right: 8px;
+    text-align: center;
+}
+footer .footer-otherproject-12 .icon-metawiki {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    margin-right: 12px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/metawiki.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .footer-otherproject-12 {
+    position: relative;
+    top: 16px;
+    left: 4px;
+    width: 50px;
+    height: 37px;
+    text-align: center;
+}
+
+footer .footer-sidebar-down--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 8px 0;
+    color: var(--secondary-color);
+}
+footer .footer-sidebnar-down--text {
+    display: inline-block;
+}
+footer .footer-sidebar-down--container a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+footer .footer-sidebar-down--container p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 13px 0;
+}
+footer .footer-sidebar-down--logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wiki_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer .footer-sidebar-down-googleplay--logo {
+    display: inline-block;
+    width: 124px;
+    height: 38px;
+    margin-right: 2px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/guguruplay.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+footer .footer-sidebar-down--container-desktop {
+    display: none;
+}
+footer .footer-sidebar--container {
+    display: none;
+}
+footer .footer-sidebar-down-appstore--logo {
+    display: inline-block;
+    width: 110px;
+    height: 38px;
+    margin-left: 2px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/appstore.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.space-between {
+    width: 100%;
+    height: 40px;
+}
+.site-license {
+    width: 99%;
+    height: auto;
+    margin: 14px auto;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+.site-license a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media (min-width: 480px) {
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .header-logo {
+    width: 176px;
+    height: 68px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikilogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+main .main-input--container {
+    width: 80%;
+    position: relative;
+    top: 345px;
+}
+
+main .main-central--container {
+    position: relative;
+    bottom: 45px;
+    max-width: 546px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/logo_curve.png');
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 8px);
+    background-position-y: calc(50% - 2px);
+}
+
+main .main-central-language--1 {
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--2 {
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--3 {
+    position: relative;
+    right: 50px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--4 {
+    position: relative;
+    left: 60px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--5 {
+    position: relative;
+    top: 8px;
+    right: 58px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--6 {
+    position: relative;
+    top: 8px;
+    left: 66px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--7 {
+    position: relative;
+    top: 14px;
+    right: 50px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--8 {
+    position: relative;
+    top: 14px;
+    left: 60px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--9 {
+    position: relative;
+    top: 18px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-language--10 {
+    position: relative;
+    top: 18px;
+    left: 14px;
+    width: 50%;
+    height: 44px;
+    margin: 0 0 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .main-central-text--title {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+main .main-central-text--articles {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+footer .footer-otherproject {
+    width: 33%;
+}
+footer .footer-otherproject--bottom {
+    width: 33%;
+}
+footer .footer-otherproject--bottom a:visited {
+    color: var(--primary-color);
+}
+
+footer .footer-sidebar--container {
+    display: none;
+}
+
+main .first--hr {
+    clear: both;
+    border: 0;
+    height: 0;
+    margin: .26rem 1.3rem;
+    border-bottom: 1px solid #c8ccd1;
+    margin-top: 131px;
+}
+main .second--hr {
+    clear: both;
+    border: 0;
+    height: 0;
+    margin: .26rem 1.3rem;
+    border-bottom: 1px solid #c8ccd1;
+}
+}
+
+@media (min-width: 768px) {
+
+main .main-input--container {
+    width: 80%;
+    max-width: 450px;
+    position: relative;
+    top: 345px;
+}
+main .main-input--container button {
+    position: relative;
+    left: 2px;
+}
+footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    padding: 4.16rem 1.28rem;
+    line-height: 1.5;
+}
+footer .footer-sidebar--container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+}
+footer .footer-sidebar-up--container {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+footer .footer.sidebar-up-logo-container {
+    margin-right: 10px;
+}
+footer .footer-sidebar-up--text {
+    color: var(--secondary-color);
+    margin-left: 10px;
+    max-width: 243px;
+}
+footer .footer-sidebar-up--text a {
+    text-decoration: none;
+}
+footer .footer-sidebar-up--text a:visited {
+    color: var(--primary-color);
+}
+footer .footer-sidebar-down--contain {
+    display: flex;
+    padding-left: 10px;
+    background-color: #f8f9fa;
+}
+footer .footer-sidebar-down--text {
+    color: var(--secondary-color);
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 266px;
+}
+footer .footer-sidebar-down--text a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+footer .footer-sidebar-down--logo {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-top: 10px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wiki_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+footer .footer-sidebar-up--logo {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-image: url('http://codes.unidepix.com/codes/mfwikipedia/img/wikimedia.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer .footer-sidebar-down--container {
+    display: none;
+}
+footer .footer-sidebar-content {
+    display: none;
+}
+.space-between {
+    display: none;
+}
+
+}
